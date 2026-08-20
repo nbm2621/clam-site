@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clam - Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #fcf9f5;
+            --card-bg: #ffffff;
+            --text-main: #2d2926;
+            --text-muted: #605853;
+            --accent-pearl: #f3e5d8;
+            --accent-clam: #d4a373;
+            --accent-dark: #a98467;
+            --border-color: #ededed;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.65;
+        }
+
+        header {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 40px 20px 0 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        header img {
+            width: 32px;
+            height: 32px;
+        }
+
+        header .name {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .wrap {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 30px 20px 80px 20px;
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            margin-bottom: 4px;
+        }
+
+        .updated {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            color: #3a3634;
+        }
+
+        .highlight-box {
+            background: var(--accent-pearl);
+            border-radius: 18px;
+            padding: 24px 28px;
+            margin: 24px 0;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--border-color);
+            font-size: 0.95rem;
+        }
+
+        th {
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent-dark);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            background: #f6f2ed;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="icon.png" alt="Clam" />
+        <span class="name">Clam</span>
+    </header>
+
+    <div class="wrap">
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: August 2026</p>
+
+        <div class="highlight-box">
+            <p><strong>The short version:</strong> Clam scans the text you paste or type entirely on your own device. It never transmits, stores remotely, or shows us what you paste or type, not even to check whether it's sensitive. There's no server on the other end of that process at all.</p>
+        </div>
+
+        <h2>What Clam does</h2>
+        <p>Clam is a browser extension that watches for sensitive information, like Social Security numbers, credit card numbers, API keys, or your own custom pearl words, before it's sent to ChatGPT, Claude, Gemini, Perplexity, or Copilot. When it detects something, it shows you a warning so you can decide what to do next.</p>
+
+        <h2>What we don't collect</h2>
+        <p>We do not collect, transmit, or store:</p>
+        <ul>
+            <li>The text you paste or type into any AI chat tool</li>
+            <li>Your browsing history or activity on any website</li>
+            <li>Any personally identifying information about you</li>
+        </ul>
+        <p>All detection happens locally, in your browser, using pattern matching that runs entirely on your device. There is no server that receives or processes the content you paste or type.</p>
+
+        <h2>What is stored, and where</h2>
+        <p>Clam stores a small amount of settings data locally on your own device, using your browser's built-in extension storage. This data never leaves your device and is not synced to any server we operate.</p>
+        <table>
+            <tr><th>Stored locally</th><th>Purpose</th></tr>
+            <tr><td>On/off toggle state</td><td>Remembers whether you've turned detection on or off</td></tr>
+            <tr><td>Pearl Tier status</td><td>Remembers whether you're on the free or paid tier</td></tr>
+            <tr><td>License code</td><td>Used to verify your Pearl Tier subscription with Stripe (see below)</td></tr>
+            <tr><td>Your custom pearl words</td><td>The list of terms you've chosen to be warned about</td></tr>
+        </table>
+
+        <h2>Payment processing</h2>
+        <p>If you subscribe to Pearl Tier, payment is handled entirely by <a href="https://stripe.com" target="_blank" rel="noopener">Stripe</a>, a third-party payment processor. We never see or store your card details. Stripe collects the information necessary to process payment (such as your email and card information) under its own privacy policy, available at <a href="https://stripe.com/privacy" target="_blank" rel="noopener">stripe.com/privacy</a>.</p>
+
+        <h2>Permissions this extension uses</h2>
+        <table>
+            <tr><th>Permission</th><th>Why</th></tr>
+            <tr><td><code>storage</code></td><td>To save your settings and pearl word list locally on your device</td></tr>
+            <tr><td><code>tabs</code></td><td>To open Stripe's checkout and billing management pages in a new tab when you choose to upgrade or manage your subscription</td></tr>
+        </table>
+
+        <h2>No analytics, no tracking, no ads</h2>
+        <p>Clam does not use analytics services, tracking pixels, or advertising of any kind. We have no way of knowing how you use the extension beyond what's necessary for it to function on your own device.</p>
+
+        <h2>Children's privacy</h2>
+        <p>Clam is not directed at children and is not intended for use by anyone under 13.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If this policy changes, the updated version will be posted on this page with a new "last updated" date.</p>
+
+        <h2>Contact</h2>
+        <p>Questions about this policy or how Clam handles data can be sent to <a href="mailto:clamextension@gmail.com">clamextension@gmail.com</a>.</p>
+    </div>
+
+    <footer>
+        Clam &middot; a small tool for people who work with sensitive data
+    </footer>
+
+</body>
+</html>
